@@ -42,3 +42,11 @@ def decode_word(string)
   end
   print "#{@text.join} "
 end
+
+def decode(string)
+  @split = string.split('   ');
+  @split.each do |each|
+    decode_word(each)
+  end
+end
+decode("      .-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
