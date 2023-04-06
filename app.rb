@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 @alphabets = {
   '.-' => 'A',
   '-...' => 'B',
@@ -35,7 +33,7 @@ end
 
 def decode_word(string)
   @text = []
-  each = string.split(' ')
+  each = string.split
   each.each do |i|
     @new_word = decode_char(i)
     @text.push(@new_word)
